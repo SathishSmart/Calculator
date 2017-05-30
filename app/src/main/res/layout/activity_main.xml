@@ -13,5 +13,71 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:paddingLeft="90dp"
+        android:textSize="30dp"
+        android:text="Calculator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit2"
+        android:layout_marginTop="100dp"
+        android:id="@+id/res"
+        android:paddingBottom="40dp"
+        android:paddingRight="30dp"
+        android:layout_marginLeft="220dp" />
+
+    <TextView
+        android:text="First Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextView"
+        android:layout_alignBaseline="@+id/edit2"
+        android:layout_alignBottom="@+id/edit2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="56dp"
+        android:id="@+id/edit2"
+        android:layout_below="@+id/edit1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edit1"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_below="@+id/res"
+        android:layout_toLeftOf="@+id/edit2"
+        android:layout_toStartOf="@+id/edit2"
+        android:layout_marginTop="11dp" />
+
 </RelativeLayout>
