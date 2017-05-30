@@ -1,17 +1,18 @@
 package smartglossa.com.cal;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     EditText res1;
     EditText res2;
     TextView res3;
     Button Add;
+    Button sub;
     Integer x,y,z;
 
     @Override
@@ -22,14 +23,26 @@ public class MainActivity extends AppCompatActivity {
         res2=(EditText)findViewById(R.id.edit2);
         res3=(TextView)findViewById(R.id.res);
         Add=(Button)findViewById(R.id.button);
+        sub=(Button)findViewById(R.id.sub);
         Add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 x=Integer.parseInt(res1.getText().toString());
                 y=Integer.parseInt(res2.getText().toString());
-                z=x+y;
+                z=x + y;
                 res3.setText(Integer.toString(z));
             }
+
+        });
+        sub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                x=Integer.parseInt(res1.getText().toString());
+                y=Integer.parseInt(res2.getText().toString());
+                z=x * y;
+                res3.setText(Integer.toString(z));
+            }
+
         });
 
     }
