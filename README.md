@@ -8,7 +8,7 @@ Error:
 <br>
 This is a Lint warning called "TextView Internationalization" which says :
 <br>
-setText(String.format("%d", getIntent().getExtras().<error>getInt("level"))));</error>
+setText(String.format("%d", getIntent().getExtras().<b>getInt("level"))));</b>
 <br>
 In you LoginActivity, you insert String! named "a" into Intent.
 <br>
